@@ -12,12 +12,14 @@ const connect = function () {
 
   //on connection
   conn.on("connect", () => {
+    conn.write("Name: cjt");
+
     console.log("You are connected");
   });
 
   //data recieved
   conn.on("data", (data) => {
-    console.log(`Server says ${data}`);
+    console.log(`Server says: ${data}`);
   });
 
   //on close
