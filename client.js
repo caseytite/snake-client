@@ -13,6 +13,7 @@ const connect = function () {
   //on connection
   conn.on("connect", () => {
     conn.write("Name: cjt");
+    conn.write("Say: run!");
     // conn.write("Move: up");
 
     console.log("You are connected");

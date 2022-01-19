@@ -1,8 +1,8 @@
-let connection;
 const net = require("net");
 // need to use stdin
 const { stdin } = require("process");
 
+let connection;
 const handleUserInput = function () {
   //terminates game
   stdin.on("data", (key) => {
